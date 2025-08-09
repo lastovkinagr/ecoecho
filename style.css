@@ -32,6 +32,19 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  width: auto;
+  height: auto;
+  background-color: #109216;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 1rem 0;
+  transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+h3:hover {
+  background-color: lightgreen;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -107,4 +120,9 @@ footer {
   nav ul li {
     margin: 10px 0;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
