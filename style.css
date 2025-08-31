@@ -130,9 +130,7 @@ img {
 * {box-sizing:border-box}
 
 /* Carousel */
-{
-  box-sizing: border-box;
-}
+* {box-sizing:border-box;}
 
 body {
   max-width: 1440px;
