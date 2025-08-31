@@ -130,7 +130,7 @@ img {
 * {box-sizing:border-box}
 
 /* Carousel */
-* {
+{
   box-sizing: border-box;
 }
 
@@ -164,7 +164,7 @@ body {
   bottom: 0;
   margin: auto;
   height: 4rem;
-  background-color: white;
+  background-color: #fff;
   border: none;
   width: 2rem;
   font-size: 3rem;
@@ -198,20 +198,20 @@ body {
 }
 
 .slide:nth-child(1) {
-  background-color: #49b293;
+  background-color: #f0f9f0;
 }
 
 .slide:nth-child(2) {
-  background-color: #b03532;
+  background-color: #f0f9f0;
 }
 
 .slide:nth-child(3) {
-  background-color: #6a478f;
+  background-color: #f0f9f0;
   margin: 0;
 }
 
 .slide:nth-child(4) {
-  background-color: #da6f2b;
+  background-color: #f0f9f0;
 }
 
 footer a {
