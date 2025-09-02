@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EcoEcho - Contact</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
 </head>
 
 <body>
@@ -21,38 +23,65 @@
       </nav>
     </div>
   </header>
-
+  <!--Post form here-->
   <main class="container">
     <section>
       <h2>Contact Us</h2>
-      <form action="#" method="POST">
+      <form id="emailForm">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
+        <input type="text" id="name" name="name" required><br>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required><br>
+        <label for="toEmail">To:</label>
+        <input type="email" id="toEmail" name="toEmail" required><br>
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send</button>
+        <textarea id="message" name="message" required></textarea><br>
+        <button type="button" onclick="sendEmail()">Send Email</button>
       </form>
+      <script>
+        function sendEmail() {
+          const name = document.getElementById("name").value;
+          const toEmail = document.getElementById("toEmail").value;
+          const subject = document.getElementById("subject").value;
+          const message = document.getElementById("message").value;
 
-      <h2><b>Office Location</b></h2>
-      <p>EcoEcho Headquarters
-        <br>
-        15,Ethnikis Antistaseous Street
-        <br>
-        Glyfada,16674
-        <br>
-        Athens,Greece
-      </p>
-    </section>
-  </main>
+          Email.send({
+            SecureToken: "e74597f3_23ae_462a_b2ad",
+            To: toEmail,
+            From: "frendz120@gmail.com",
+            Subject: subject,
+            Body: message,
+          }).then((response) => {
+            if (response === "OK") {
+              alert("✅ Email sent successfully!");
+            } else {
+              alert("❌ Failed to send email: " + response);
+            }
+          });
+        }
+      </script>
+</body>
 
-  <footer>
-    <p>&copy; 2025 EcoEcho. All rights reserved.</p>
-  </footer>
+</html>
+
+</script>
+</body>
+
+</html>
+<h2><b>Office Location</b></h2>
+<p>EcoEcho Headquarters
+  <br>
+  15,Ethnikis Antistaseous Street
+  <br>
+  Glyfada,16674
+  <br>
+  Athens,Greece
+</p>
+</section>
+</main>
+<footer>
+  <p>&copy; 2025 EcoEcho. All rights reserved.</p>
+</footer>
 </body>
 
 </html>
