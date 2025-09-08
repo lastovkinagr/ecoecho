@@ -21,10 +21,14 @@ our projects:
 block with Javascript elements,
 contact form :name,message,email,
 address of location.
+# Activities page:(was created by Kolomiitseva Natalia)
+-colorful images;
+-our initiatives;
+-recycling guides;
 # Features:
--Home page with navigations
--Projects page with javaScript elements
--Contact form with JavaScript email sending
+-Home page with navigations;
+-Projects page with javaScript elements;
+-Contact form with JavaScript email sending;
 # Instalation:
 1.Clone the repository
 ```bash
