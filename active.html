@@ -21,6 +21,24 @@
             text-align: center;
         }
 
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+
+
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 10px, 5rem;
+            font-size: medium;
+        }
+
         section {
             padding: 48px 20px;
             border-bottom: 1px solid #ddd;
@@ -41,6 +59,7 @@
             gap: 24px;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             align-items: start;
+
         }
 
         .card {
@@ -49,16 +68,19 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            text-align: center;
         }
 
         .card img {
             width: 50%;
             height: 180px;
             object-fit: cover;
+
         }
 
         .card-content {
             padding: 16px;
+
         }
 
         footer {
@@ -72,65 +94,79 @@
 
 <body>
     <header>
-        <div class="container">
-            <h1>EcoEcho</h1>
+        <div>
+            <nav>
+                <div>
+                    <h1>EcoEcho</h1>
+                    <div>
+
+                        <ul>
+                            <li><a href="index.html">Home</a></li><br><br>
+                            <li><a href="projects.html">Projects</a></li><br><br>
+                            <li><a href="contact.html">Contact</a></li><br><br>
+                        </ul>
+                    </div>
+                </div>
         </div>
+        </nav>
     </header>
     <main>
-        <section id="initiatives">
-            <div class="container">
-                <h2>Our Initiatives</h2>
-                <div class="grid">
-                    <div class="cards">
-                        <div class="card content">
-                            <img src="images/roof.jpg" alt="picture ecology" width="30%" />
-                            <h3>Projects</h3>
-                            <p>Collaboration of landscape design students<br>
-                                with "Pireus Gardening Centre"</p>
+        <div>
+            <section id="initiatives">
+                <div class="container">
+                    <h2>Our Initiatives</h2>
+                    <div class="grid">
+                        <div class="cards">
+                            <div class="card content">
+                                <img src="images/roof.jpg" alt="picture ecology" style="width:128;height: 128;">
+                                <h3>Projects</h3>
+                                <p>Collaboration of landscape design students<br>
+                                    with "Pireus Gardening Centre"</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/flowers.jpg" alt="partner ecology" width="30%">
-                        <div class="card-content">
-                            <h3>Partnership</h3>
-                            <p>Collaboration with "Pireus Gardening Centre": creating lawn with wild flowers,April 2025
-                            </p>
+                        <div class="card">
+                            <img src="images/flowers.jpg" alt="partner ecology" width="30%">
+                            <div class="card-content">
+                                <h3>Partnership</h3>
+                                <p>Collaboration with "Pireus Gardening Centre": creating lawn with wild flowers,April
+                                    2025
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="events">
-            <div class="container">
-                <h2>Event Calendar</h2>
-                <div class="grid">
-                    <div class="card">
-                        <img src="images/repair.jpg" alt="Eco events" width="#" height=50px />
-                        <div class="card-content">
-                            <h3>Upcoming Events</h3>
-                            <p>Consume consciously- do not throw away:<br>
-                                we repair home appliansces.</p>
+            </section>
+            <section id="events">
+                <div class="container">
+                    <h2>Event Calendar</h2>
+                    <div class="grid">
+                        <div class="card">
+                            <img src="images/repair.jpg" alt="Eco events" width="#" height=50px />
+                            <div class="card-content">
+                                <h3>Upcoming Events</h3>
+                                <p>Consume consciously- do not throw away:<br>
+                                    we repair home appliansces.</p>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="recycling">
-            <div class="container">
-                <h2>Recycling Guides</h2>
-                <div class="grid">
-                    <div class="card">
-                        <img src="images/recycl.jpeg" alt="recycling guid" />
-                        <div class="card-content">
-                            <h3></h3>
-                            <p>Join our clean-up drives, workshops, and awareness campaigns happening near you.</p>
+            </section>
+            <section id="recycling">
+                <div class="container">
+                    <h2>Recycling Guides</h2>
+                    <div class="grid">
+                        <div class="card">
+                            <img src="images/recycl.jpeg" alt="recycling guid" />
+                            <div class="card-content">
+                                <h3></h3>
+                                <p>Join our clean-up drives, workshops, and awareness campaigns happening near you.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        </section>
+            </section>
+            </section>
     </main>
     <!--/main-->
     <!--footer-->
